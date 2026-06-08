@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://vercelcn.com/ads-widget.js"></script>
+  <title>搜索-高分电视剧大全-热门剧集榜单-高清剧集在线播放</title>
+  <meta name="description" content="搜索高分电视剧、热门剧集、精选片库、地区、年份与类型标签。">
+  <meta name="keywords" content="高分电视剧大全,热门剧集,剧集榜单,高清播放,精选电视剧,热播剧,电视剧片库,搜索,剧集检索">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="高清剧集大全">
+      <span class="brand-icon">▶</span>
+      <span class="brand-text">
+        <strong>高清剧集大全</strong>
+        <small>热门剧集榜单 · 高清剧集在线播放</small>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="" href="index.html">首页</a>
+<a class="" href="categories.html">分类总览</a>
+<a class="" href="rankings.html">热播榜</a>
+<a class="is-active" href="search.html">搜索</a>
+      <div class="nav-dropdown">
+        <button type="button">频道</button>
+        <div class="dropdown-panel">
+          <a href="category-hot-dramas.html">热门剧集</a>
+<a href="category-high-score-drama.html">高分剧情</a>
+<a href="category-suspense-crime.html">悬疑犯罪</a>
+<a href="category-urban-romance.html">都市情感</a>
+<a href="category-action-adventure.html">动作冒险</a>
+<a href="category-sci-fi-fantasy.html">科幻奇幻</a>
+<a href="category-youth-campus.html">青春校园</a>
+<a href="category-comedy-animation.html">喜剧动画</a>
+<a href="category-history-war.html">历史战争</a>
+<a href="category-global-series.html">海外佳作</a>
+        </div>
+      </div>
+    </nav>
+    <form class="header-search" action="search.html" data-site-search>
+      <input type="search" name="q" placeholder="搜索剧集、地区、年份" aria-label="搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开导航">☰</button>
+  </div>
+  <div class="mobile-nav" data-mobile-nav>
+    <form action="search.html" data-site-search>
+      <input type="search" name="q" placeholder="搜索剧集、地区、年份" aria-label="搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <a class="" href="index.html">首页</a>
+<a class="" href="categories.html">分类总览</a>
+<a class="" href="rankings.html">热播榜</a>
+<a class="is-active" href="search.html">搜索</a>
+    <div class="mobile-cat-list">
+      <a href="category-hot-dramas.html">热门剧集</a>
+<a href="category-high-score-drama.html">高分剧情</a>
+<a href="category-suspense-crime.html">悬疑犯罪</a>
+<a href="category-urban-romance.html">都市情感</a>
+<a href="category-action-adventure.html">动作冒险</a>
+<a href="category-sci-fi-fantasy.html">科幻奇幻</a>
+<a href="category-youth-campus.html">青春校园</a>
+<a href="category-comedy-animation.html">喜剧动画</a>
+<a href="category-history-war.html">历史战争</a>
+<a href="category-global-series.html">海外佳作</a>
+    </div>
+  </div>
+</header>
+<main>
+<section class="page-hero search-hero">
+  <div>
+    <span class="section-kicker">片库搜索</span>
+    <h1>搜索剧集与影片</h1>
+    <p>输入剧名、地区、类型、年份或标签，即可查找对应播放入口。</p>
+  </div>
+</section>
+<section class="search-workbench">
+  <div class="search-box-large">
+    <input type="search" placeholder="输入片名、地区、年份或标签" data-search-input aria-label="搜索片库">
+    <button type="button" data-search-submit>搜索</button>
+  </div>
+  <div class="search-cats">
+    <button type="button" data-search-category="" class="is-active">全部</button>
+    <button type="button" data-search-category="hot-dramas">热门剧集</button><button type="button" data-search-category="high-score-drama">高分剧情</button><button type="button" data-search-category="suspense-crime">悬疑犯罪</button><button type="button" data-search-category="urban-romance">都市情感</button><button type="button" data-search-category="action-adventure">动作冒险</button><button type="button" data-search-category="sci-fi-fantasy">科幻奇幻</button><button type="button" data-search-category="youth-campus">青春校园</button><button type="button" data-search-category="comedy-animation">喜剧动画</button><button type="button" data-search-category="history-war">历史战争</button><button type="button" data-search-category="global-series">海外佳作</button>
+  </div>
+</section>
+<section class="section-wrap tight">
+  <div class="search-summary" data-search-summary>输入关键词查看结果</div>
+  <div class="movie-grid" data-search-results></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">高清剧集大全</div>
+      <p>整理高分电视剧大全与热门剧集榜单，覆盖口碑剧、热播剧和精选剧集内容。</p>
+    </div>
+    <div>
+      <h3>频道入口</h3>
+      <div class="footer-links">
+        <a href="category-hot-dramas.html">热门剧集</a>
+<a href="category-high-score-drama.html">高分剧情</a>
+<a href="category-suspense-crime.html">悬疑犯罪</a>
+<a href="category-urban-romance.html">都市情感</a>
+<a href="category-action-adventure.html">动作冒险</a>
+<a href="category-sci-fi-fantasy.html">科幻奇幻</a>
+      </div>
+    </div>
+    <div>
+      <h3>快捷访问</h3>
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类总览</a>
+        <a href="rankings.html">热播榜</a>
+        <a href="search.html">搜索</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 高清剧集大全 · 热门剧集榜单 · 高清剧集在线播放</div>
+</footer>
+  <script src="./assets/js/search-data.js"></script>
+  <script src="./assets/js/search.js"></script>
+  <script src="./assets/js/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
